@@ -1,5 +1,5 @@
-using System;
 using Xunit;
+using TDDPractice;
 
 namespace TDDPractice.Test
 {
@@ -8,7 +8,9 @@ namespace TDDPractice.Test
         [Fact]
         public void Test1()
         {
-
+            var fizzbuzz = new Fizzbuzz();
+            var actual = fizzbuzz.Convert(1);
+            Assert.Equal(actual, "");
         }
     }
 }
